@@ -21,12 +21,31 @@
     <li>width: 프레임의 폭. 픽셀값. 디폴트 300</li>
     <li>height: 프레임의 높이. 픽셀값. 디폴트 150</li>
   </ul>
+  <p>네이버, 아마존 같은 대부분의 포털 사이트들은 iframe 태그로 연결할 수 없다.<br>
+  Clickjacking 이라고 부르는 웹 침입을 막기 위해서 인라인 프레임에 출력되지 않는다.</p>
+  <br><hr><br>
+  <p>iframe의 주의점</p>
+  <ul>
+    <li>iframe 태그는 body 태그 내에 작성한다.</li>
+    <li>src 속성이 생략되면 브라우저에 iframe 영역이 빈 상태로 만들어진다.</li>
+    <li>인라인 프레임이 출력할 HTML 텍스트를 srcdoc 속성에 직접 작성할 수 있다.<br>
+    srcdoc 속성이 있다면 src 속성은 무시된다.</li>
+    <li>인라인 프레임 안에 인라인 프레임 중첩이 가능하다.</li>
+  </ul>
   <br><hr><br>
   <iframe src="iframe_test/iframe1.html" width="300px" height="200px" frameborder="1">
     iframe1
   </iframe>
-  <iframe src="iframe_test/iframe2.html" width="100px" height="100px" frameborder="1">
+  <iframe src="iframe_test/iframe2.html" srcdoc="<html><head></head><body>Hello iframe 2의 srcdoc 속성</body></html>" width="200px" height="200px" frameborder="1">
     iframe2
   </iframe>
+  <p>frameset과 frame은 문서와 웹 주소 사이의 불일치, 잘못된 북마킹, 프린트나 검색시의 불관정성 등으로 인해<br>
+    HTML5에서 완전히 제거 되었으므로 사용하지 말자.</p>
+  <p>iframe 역시 요즘 잘 사용하지 않는다.</p>
+  <br><hr><br>
+  <p>브라우저 윈도우와 인라인 프레임 윈도우는 부모 자식 관계가 형성된다.</p>
+  <p>부모 윈도우는 parent, 자식 윈도우는 child, 최상위 브라우저는 top이라고 칭한다.</p>
+  
+  <br><hr><br>
 </body>
 </html>
