@@ -33,16 +33,17 @@
       <option value="2">2</option>
       <option value="3">3</option>
     </select><br>
-    month <input type="month" value="월"><br>
-    week <input type="week" value="주"><br>
-    date <input type="date" value="날짜"><br>
-    datetime-local <input type="datetime-local" value="년월일시"><br>
-    number <input type="number" value="숫자"><br>
-    range <input type="range" value="슬라이드바"><br>
-    color <input type="color" value="색"><br>
-    email <input type="email" value="이메일"><br>
-    url <input type="url" value="url"><br>
-    tel <input type="tel" value="전화번호"><br>
+    month <input type="month" value="2021-10"><br>
+    week <input type="week" value="2021-W36"><br>
+    date <input type="date" value="2021-11-21"><br>
+    datetime-local <input type="datetime-local" value="2021-11-21T21:30:10.32"><br>
+    time <input type="time" value="21:30"><br>
+    number <input type="number" min="1" max="10" step="1" value="0"><br>
+    range <input type="range"  min="0" max="10" step="2" value="6"><br>
+    color <input type="color" value="#282828"><br>
+    email <input type="email" value="지워봐" placeholder="id@host"><br>
+    url <input type="url" value="얘도 지워봐" placeholder="http://"><br>
+    tel <input type="tel" value="이것도" placeholder="000-0000-0000"><br>
     search <input type="search" value="검색키워드"><br>
     file <input type="file" value="파일선택"><br>
     <button type="button">버튼</button>
@@ -118,6 +119,18 @@
     </label>
     <input type="text" id="text">
     <p>2. label의 for 요소를 이용해 같은 이름의 id가 작성되어 있는 input에 포커싱 된다.</p>
-
+    <br><hr><br>
+    <p>fieldset 폼 요소 그룹핑</p>
+    <p>fieldset 태그로 폼 요소를 그룹으로 묶을 수 있으며, 그룹의 제목은 legend 태그로 표현한다.<br>
+      브라우저는 그룹을 둘러싸는 외곽선 박스와 제목을 출력하여 그룹을 표시한다.</p>
+    <form>
+      <fieldset>
+        <legend>폼 요소 그룹</legend>
+        아이디 <input type="text"><br>
+        비밀번호 <input type="password"><br>
+        <input type="submit" value="로그인">
+      </fieldset>
+      <small>짜잔</small>
+    </form>
   </body>
 </html>
