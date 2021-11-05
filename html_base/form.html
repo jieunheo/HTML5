@@ -7,10 +7,43 @@
     <title>웹 폼 연습</title>
   </head>
   <body>
+    <ul>
+      <li>action: 폼 데이터를 처리할 웹 서버 응용프로그램 이름 URL</li>
+      <li>enctype: 폼 데이터를 웹 서버로 전송할 때 암호화 방식 지정</li>
+      <li>method: 폼 데이터 웹 서버에 전송하는 방식</li>
+      <li>target: 웹 서버 응용프로그램으로부터 전송받은 데이터(HTML 문서나 이미지)를 출력할 윈도우 이름</li>
+    </ul>
+    <hr>
     <form id="myForm" name="myForm" method="post" action="http://192.168.0.108:8080/web07.jsp">
       x값: <input type="text" id="x" name="x" value="2"><br>
       y값: <input type="text" id="y" name="y" value="3"><br>
       <input type="submit" value="더하기">
     </form>
+    <hr>
+    text <input type="text" value="1234"><br>
+    password <input type="password" value="1234"><br>
+    button <input type="button" value="버튼"><br>
+    submit <input type="submit" value="전송"><br>
+    reset <input type="reset" value="폼초기화"><br>
+    image <input type="image" value="이미지버튼"><br>
+    checkbox <input type="checkbox" value="체크박스"><br>
+    radio <input type="radio" value="라디오버튼"><br>
+    select <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select><br>
+    month <input type="month" value="월"><br>
+    week <input type="week" value="주"><br>
+    date <input type="date" value="날짜"><br>
+    datetime-local <input type="datetime-local" value="년월일시"><br>
+    number <input type="number" value="숫자"><br>
+    range <input type="range" value="슬라이드바"><br>
+    color <input type="color" value="색"><br>
+    email <input type="email" value="이메일"><br>
+    url <input type="url" value="url"><br>
+    tel <input type="tel" value="전화번호"><br>
+    search <input type="search" value="검색키워드"><br>
+    file <input type="file" value="파일선택"><br>
   </body>
 </html>
