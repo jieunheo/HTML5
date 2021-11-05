@@ -108,7 +108,16 @@
       option 태그 안에 selected 속성을 이용해서 기본 선택값 지정 가능</p>
     <p>datalist는 리스트 안에서 선택 하거나 직접 입력이 가능하나 select는 옵션 안에서 선택만 가능하다.</p>
     <hr>
-    
+    <p>label 태그</p>
+    <label>
+      이름: <input type="text">
+    </label>
+    <p>1. label로 함께 묶인 텍스트 부분을 누르면 해당 안에 있는 input에 포커싱 된다.</p>
+    <label for="text">
+      이름: 
+    </label>
+    <input type="text" id="text">
+    <p>2. label의 for 요소를 이용해 같은 이름의 id가 작성되어 있는 input에 포커싱 된다.</p>
 
   </body>
 </html>
